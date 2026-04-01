@@ -484,7 +484,7 @@ export default function SEOAnalyticsClient() {
                 Indexed Pages
               </h2>
             <p className="text-sm text-[var(--enterprise-text-muted)]">
-              Pages in Google's index
+              Pages in Google&#39;s index
             </p>
             </div>
           </div>

@@ -2,7 +2,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
-import GlobalOverlay from "./components/GlobalOverlay";
 import SessionProvider from "./components/SessionProvider";
 import ConditionalOverlay from "./components/ConditionalOverlay";
 import Script from "next/script";

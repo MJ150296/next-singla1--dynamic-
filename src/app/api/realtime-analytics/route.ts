@@ -22,7 +22,7 @@ function getAnalyticsClient() {
   return new BetaAnalyticsDataClient();
 }
 
-export async function GET(_request: NextRequest) {
+export async function GET() {
   try {
     const session = await auth();
 
