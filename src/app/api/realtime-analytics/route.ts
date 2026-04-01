@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { auth } from "@/app/auth";
-import { BetaAnalyticsDataClient } from "@google-analytics/data";
+import { BetaAnalyticsDataClient, protos } from "@google-analytics/data";
 
 // GA4 Property ID
 const PROPERTY_ID = process.env.GA4_PROPERTY_ID || "459511871";
@@ -22,7 +22,7 @@ function getAnalyticsClient() {
   return new BetaAnalyticsDataClient();
 }
 
-export async function GET(request: NextRequest) {
+export async function GET(_request: NextRequest) {
   try {
     const session = await auth();
 
@@ -45,14 +45,15 @@ export async function GET(request: NextRequest) {
     const client = getAnalyticsClient();
 
     // Helper function to run realtime report with error handling
-    async function runRealtimeReport(config: any) {
+    async function runRealtimeReport(config: protos.google.analytics.data.v1beta.IRunRealtimeReportRequest) {
       try {
         const [response] = await client.runRealtimeReport(config);
         return response;
-      } catch (error: any) {
+      } catch (error: unknown) {
         console.error("Error running realtime report:", error);
         // Handle INVALID_ARGUMENT error specifically
-        if (error.code === 3 || error.message?.includes("INVALID_ARGUMENT")) {
+        const err = error as { code?: number; message?: string };
+        if (err.code === 3 || err.message?.includes("INVALID_ARGUMENT")) {
           console.log("⚠️ Realtime API INVALID_ARGUMENT - GA4 Realtime may not be enabled for this property");
           return { rows: [] };
         }

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { auth } from "@/app/auth";
-import { BetaAnalyticsDataClient } from "@google-analytics/data";
+import { BetaAnalyticsDataClient, protos } from "@google-analytics/data";
 
 // GA4 Property ID
 const PROPERTY_ID = process.env.GA4_PROPERTY_ID || "459511871";
@@ -65,13 +65,14 @@ export async function GET(request: NextRequest) {
     const client = getAnalyticsClient();
 
     // Helper function to run report with error handling
-    async function runReport(config: any) {
+    async function runReport(config: protos.google.analytics.data.v1beta.IRunReportRequest) {
       try {
         const [response] = await client.runReport(config);
         return response;
-      } catch (error: any) {
+      } catch (error: unknown) {
         // Handle INVALID_ARGUMENT error (e.g., no data for today)
-        if (error.code === 3 || error.message?.includes("INVALID_ARGUMENT")) {
+        const err = error as { code?: number; message?: string };
+        if (err.code === 3 || err.message?.includes("INVALID_ARGUMENT")) {
           console.log("⚠️ No data available for this date range");
           return { rows: [] };
         }

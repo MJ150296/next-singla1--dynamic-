@@ -9,15 +9,9 @@ import {
   Settings,
   FileText,
   BarChart3,
-  Shield,
-  UserCog,
   LogOut,
   ChevronDown,
   Home,
-  Calendar,
-  MessageSquare,
-  Bell,
-  HelpCircle,
   Activity,
   Monitor,
   Share2,
@@ -42,10 +36,8 @@ import {
   SidebarMenuItem,
   SidebarProvider,
   SidebarRail,
-  SidebarSeparator,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
-import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,

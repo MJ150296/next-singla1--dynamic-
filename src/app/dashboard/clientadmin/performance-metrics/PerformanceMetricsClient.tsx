@@ -517,7 +517,7 @@ export default function PerformanceMetricsClient() {
               About Performance Metrics
             </h3>
             <p className="text-sm text-[var(--enterprise-text-muted)]">
-              This data shows your website's performance metrics including page load times, server response times, and error rates. Use this information to identify slow pages and optimize user experience.
+              This data shows your website&#39;s performance metrics including page load times, server response times, and error rates. Use this information to identify slow pages and optimize user experience.
             </p>
           </div>
         </div>

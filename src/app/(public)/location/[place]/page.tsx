@@ -218,7 +218,7 @@ const PlacePage: React.FC = () => {
           </ul>
 
           <p className="mt-4 text-blue-600 text-xl">
-            Whether it's a minor filter change or a major repair, trust
+            Whether it&#39;s a minor filter change or a major repair, trust
             Singla RO Mart in {place} to get it done right. Call us today to
             book a visit or request a free quote!
           </p>

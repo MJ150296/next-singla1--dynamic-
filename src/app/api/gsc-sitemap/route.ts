@@ -5,7 +5,7 @@ import { GoogleAuth } from "google-auth-library";
 // Google Search Console API
 const GSC_PROPERTY_URL = process.env.GSC_PROPERTY_URL || "https://www.singlaromart.in";
 
-export async function GET(request: NextRequest) {
+export async function GET(_request: NextRequest) {
   try {
     const session = await auth();
 

@@ -264,7 +264,7 @@ export default function TrafficMetricsClient() {
               </tr>
             </thead>
             <tbody>
-              {metrics.map((metric, index) => (
+              {metrics.map((metric) => (
                 <tr
                   key={metric.name}
                   className="border-b border-[var(--enterprise-border-light)] last:border-b-0 hover:bg-[var(--enterprise-surface-elevated)] transition-colors"

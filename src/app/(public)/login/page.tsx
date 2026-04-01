@@ -174,7 +174,7 @@ export default function LoginPage() {
           {/* Footer Link */}
           <div className="mt-6 text-center text-sm">
             <span className="text-[var(--enterprise-text-muted)]">
-              Don't have an account?{" "}
+              Don&#39;t have an account?{" "}
             </span>
             <a href="/superadmin-register" className="enterprise-link">
               Create one

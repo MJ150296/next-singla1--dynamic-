@@ -127,7 +127,7 @@ export default function GSCPerformanceClient() {
                 Search Console Performance
               </h1>
               <p className="enterprise-subtitle mt-1">
-                Monitor your website's search performance from Google Search Console.
+                Monitor your website&#39;s search performance from Google Search Console.
               </p>
             </div>
           </div>

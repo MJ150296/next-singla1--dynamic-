@@ -77,36 +77,6 @@ export default function TrafficSourcesClient() {
     return () => clearInterval(interval);
   }, [fetchTrafficSources]);
 
-  const getChannelIcon = (channel: string) => {
-    switch (channel.toLowerCase()) {
-      case "direct traffic":
-        return <Globe className="h-4 w-4 text-blue-500" />;
-      case "organic search":
-        return <Search className="h-4 w-4 text-green-500" />;
-      case "social media":
-        return <Share2 className="h-4 w-4 text-pink-500" />;
-      case "referral sites":
-        return <Link className="h-4 w-4 text-orange-500" />;
-      default:
-        return <Globe className="h-4 w-4 text-gray-500" />;
-    }
-  };
-
-  const getChannelIconBg = (channel: string) => {
-    switch (channel.toLowerCase()) {
-      case "direct traffic":
-        return "bg-blue-500/10";
-      case "organic search":
-        return "bg-green-500/10";
-      case "social media":
-        return "bg-pink-500/10";
-      case "referral sites":
-        return "bg-orange-500/10";
-      default:
-        return "bg-gray-500/10";
-    }
-  };
-
   return (
     <div className="space-y-6">
       {/* Header Section */}

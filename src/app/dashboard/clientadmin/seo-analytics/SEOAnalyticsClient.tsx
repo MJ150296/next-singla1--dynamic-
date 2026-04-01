@@ -186,7 +186,7 @@ export default function SEOAnalyticsClient() {
                   Google Search Console Overview
                 </h2>
                 <p className="text-sm text-[var(--enterprise-text-muted)]">
-                  Your website's search performance
+                  Your website&#39;s search performance
                 </p>
               </div>
             </div>
@@ -483,9 +483,9 @@ export default function SEOAnalyticsClient() {
               <h2 className="text-lg font-semibold text-[var(--enterprise-text-primary)]">
                 Indexed Pages
               </h2>
-              <p className="text-sm text-[var(--enterprise-text-muted)]">
-                Pages in Google's index
-              </p>
+            <p className="text-sm text-[var(--enterprise-text-muted)]">
+              Pages in Google's index
+            </p>
             </div>
           </div>
         </div>

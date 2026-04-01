@@ -203,7 +203,7 @@ export default function GSCIndexingClient() {
                   Indexing Overview
                 </h2>
                 <p className="text-sm text-[var(--enterprise-text-muted)]">
-                  How many pages are in Google's index
+                  How many pages are in Google&#39;s index
                 </p>
               </div>
             </div>
@@ -253,7 +253,7 @@ export default function GSCIndexingClient() {
                 Index Coverage Breakdown
               </h2>
               <p className="text-sm text-[var(--enterprise-text-muted)]">
-                Status of pages in Google's index
+                Status of pages in Google&#39;s index
               </p>
             </div>
           </div>
@@ -487,7 +487,7 @@ export default function GSCIndexingClient() {
               About Index Coverage
             </h3>
             <p className="text-sm text-[var(--enterprise-text-muted)]">
-              Index Coverage shows which pages from your site are included in Google's index. A high index coverage percentage means most of your important pages are discoverable in search results. Address any issues to improve your site's visibility.
+              Index Coverage shows which pages from your site are included in Google&#39;s index. A high index coverage percentage means most of your important pages are discoverable in search results. Address any issues to improve your site&#39;s visibility.
             </p>
           </div>
         </div>

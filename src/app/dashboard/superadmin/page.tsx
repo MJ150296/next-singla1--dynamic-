@@ -1,7 +1,6 @@
 import { auth } from "@/app/auth";
 import { redirect } from "next/navigation";
 import RegisterClientAdminForm from "./RegisterClientAdminForm";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { UserPlus, Users, Shield, Activity, TrendingUp, UserCog } from "lucide-react";
 import "@/app/enterprise-theme.css";
 

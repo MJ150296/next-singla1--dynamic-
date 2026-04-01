@@ -1,7 +1,7 @@
 import { auth } from "@/app/auth";
 import { redirect } from "next/navigation";
 import Link from "next/link";
-import { Users, Shield, Activity, TrendingUp, Settings, FileText, BarChart3, Globe, Monitor, MapPin } from "lucide-react";
+import { Users, Shield, Activity, TrendingUp, Settings, FileText, BarChart3, Monitor, MapPin } from "lucide-react";
 import "@/app/enterprise-theme.css";
 
 export default async function ClientAdminDashboard() {
