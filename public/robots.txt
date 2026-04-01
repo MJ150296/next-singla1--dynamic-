@@ -1,0 +1,30 @@
+# Robots.txt for Singla RO Mart
+# https://singlaromart.in
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://singlaromart.in/sitemap.xml
+
+# Disallow admin and dashboard pages
+Disallow: /dashboard/
+Disallow: /api/
+
+# Allow all public pages explicitly
+Allow: /
+Allow: /about-us
+Allow: /services/
+Allow: /blogs/
+Allow: /contact-us
+Allow: /gallery
+Allow: /location/
+Allow: /amc-plans
+Allow: /login
+Allow: /credits
+
+# Block private/admin pages
+Disallow: /superadmin-register
+
+# Crawl-delay (optional, helps manage server load)
+Crawl-delay: 1
