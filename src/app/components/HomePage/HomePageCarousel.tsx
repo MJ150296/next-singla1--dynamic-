@@ -9,7 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { MapPin, Wrench, Cog } from "lucide-react"; // Lucide Icons
 
 export default function HomePageCarousel() {
@@ -66,21 +66,6 @@ export default function HomePageCarousel() {
                       alt="Singla RO Mart"
                       className="w-full h-full block object-cover object-center"
                     />
-                    {/* <CardContent className="h-full flex flex-col items-center justify-center bg-black/50 rounded-lg z-20">
-                      <h1 className="hidden md:block">
-                        <span className="text-6xl font-bold text-center text-white">
-                          {item.title}
-                        </span>
-                        <br />
-                        <span className="text-xl font-semibold text-center text-white">
-                          {item.message}
-                        </span>
-                      </h1>
-                      <div className="flex items-center gap-2 text-white mt-40 md:mt-10">
-                        {item.icon}
-                        <span className="text-lg">{item.description}</span>
-                      </div>
-                    </CardContent> */}
                   </div>
                 </Card>
               </div>
