@@ -18,7 +18,7 @@ export default function HomePageCarousel() {
   const carouselItems = [
     {
       id: 1,
-      imgURL: "/homepage/storeImage.png",
+      imgURL: "/homepage/storeImage7.png",
       title: "Singla RO Mart!",
       message: "Your one-stop solution for all RO services.",
       icon: <MapPin className="w-10 h-10 text-white" />, // Location
@@ -27,7 +27,7 @@ export default function HomePageCarousel() {
     },
     {
       id: 2,
-      imgURL: "/homepage/storeImage2.png",
+      imgURL: "/homepage/storeImage6.png",
       title: "Top Quality Services",
       message:
         "Explore our top-quality RO repair, maintenance, and installation services.",
@@ -37,7 +37,7 @@ export default function HomePageCarousel() {
     },
     {
       id: 3,
-      imgURL: "/homepage/storeImage1.png",
+      imgURL: "/homepage/storeImage8.png",
       title: "Genuine Spare Parts",
       message: "Looking for genuine RO spare parts? We've got you covered!",
       icon: <Cog className="w-10 h-10 text-white" />, // Spare Parts
@@ -60,11 +60,13 @@ export default function HomePageCarousel() {
             <CarouselItem key={item.id}>
               <div className="">
                 <Card>
-                  <div
-                    style={{ backgroundImage: `url(${item.imgURL})` }}
-                    className="relative bg-cover bg-bottom h-[450px] rounded-lg hover:scale-105 transition duration-500 animate-[pulse_6s_ease-in_infinite]"
-                  >
-                    <CardContent className="h-full flex flex-col items-center justify-center bg-black/50 rounded-lg z-20">
+                  <div className="relative h-[80vh] w-full rounded-lg overflow-hidden">
+                    <img
+                      src={item.imgURL}
+                      alt="Singla RO Mart"
+                      className="w-full h-full block object-cover object-center"
+                    />
+                    {/* <CardContent className="h-full flex flex-col items-center justify-center bg-black/50 rounded-lg z-20">
                       <h1 className="hidden md:block">
                         <span className="text-6xl font-bold text-center text-white">
                           {item.title}
@@ -78,7 +80,7 @@ export default function HomePageCarousel() {
                         {item.icon}
                         <span className="text-lg">{item.description}</span>
                       </div>
-                    </CardContent>
+                    </CardContent> */}
                   </div>
                 </Card>
               </div>
